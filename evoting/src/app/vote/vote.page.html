@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Votación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="selectedOption">
+      <ion-item>
+        <ion-label>Juan Diego Góez</ion-label>
+        <ion-radio slot="start" value="Juan Diego Góez"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Jason Rivera</ion-label>
+        <ion-radio slot="start" value="Jason Rivera"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center button-container">
+        <ion-button expand="full" (click)="vote()" shape="Round" size="large">Votar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

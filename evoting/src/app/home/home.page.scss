@@ -1,0 +1,32 @@
+ion-button {
+  --background: #2A4195;
+  --color: white;
+  --border-radius: 40px;
+  width: 18.75rem; /* 300px */
+  font-size: 1.125rem; /* 18px */
+  font-family: inherit;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+ion-img {
+  width: 18.75rem; /* 300px */
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.625rem; /* 10px */
+  margin-bottom: 0;
+}

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resultados de Votación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let vote of votes">
+      <ion-label>{{ vote.option }}</ion-label>
+      <ion-badge slot="end">{{ vote.count }}</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid class="image-container">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-align-items-center ion-text-center">
+        <ion-img class="imagen" src="/assets/images/logoevoting.png" alt="Logo Fulltime"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center button-container">
+        <ion-button expand="full" (click)="goToVotesPage()" shape="Round" size="large">Iniciar Votación</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "evoting",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
